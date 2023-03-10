@@ -7,6 +7,91 @@
               ╰─────────╯ ╰─────────╯ */
 
 
-/* backup reset & boot on base */
-ZMK_COMBO(reset,    &reset,         LB4 LT0 LH0,     BASE)
-ZMK_COMBO(boot,     &bootloader,    LB4 LT0 LH1,     BASE)
+// Left top row
+ZK_COMB0(q_comb,               Q,                  LT3, LT2)
+ZK_COMB0(z_comb,               Z,                  LT2, LT1)
+// Right top row
+ZK_COMB0(dlr,                  DLLR,               RT0, R1)
+ZK_COMB0(eql,                  EQUAL,              RT1, RT2)
+ZK_COMB0(backsp,               BSPC,               RT2, RT3)
+
+// Left home row
+ZK_COMB0(ctrl_combo_l,         LCTRL,              LM3, LM2)
+ZK_COMB0(escape_sym,           ESC,                LM2, LM1)
+ZK_COMB0(dquo,                 DQT,                LM3, LM1)
+ZK_COMB0(tab_mod,              TAB,                LM3, LM2, LM1)
+ZK_COMB0(del,                  DEL,                LM1, LM0)
+// Right home row
+ZK_COMB0(coln_sym,             COLON,              RM1, RM2)
+ZK_COMB0(ctrl_combo_r,         RCTRL,              RM2, RM3)
+ZK_COMB0(quot,                 SQT,                RM1, RM3)
+ZK_COMB0(ent,                  ENT,                RM1, RM2, RM3)
+ZK_COMB0(scln,                 SEMI,               RM0, RM1)
+// Mixed
+// ZK_COMB0(capsword,             CAPSWORD,           LM2, RM2)
+
+// Left bottom row
+ZK_COMB0(lalt,                 LALT,               LB3, LB2)
+ZK_COMB0(gui_combo_l,          LGUI,               LB2, LB1)
+ZK_COMB0(shift_combo_l,        LSFT,               LB1, LB0)
+// Right bottom row
+ZK_COMB0(shift_combo_r,        RSFT,               RB0, RB1)
+ZK_COMB0(gui_combo_r,          RGUI,               RB1, RB2)
+ZK_COMB0(ralt,                 RALT,               RB2, RB3)
+// ZK_COMB0(leader,               LEADER,             RB1, RB3)
+
+// Vertical top left
+ZK_COMB0(small_left_arrow,     &arrow_left,        LT2, LM2)
+ZK_COMB0(lt_eq,                &lte,               LT1, LM1)
+// Vertical top right
+ZK_COMB0(small_right_arrow,    &arrow_right,       RT2, RM2)
+ZK_COMB0(large_right_arrow,    &arrow_right_d,     RT1, RM1)
+// Vertical bottom left
+ZK_COMB0(gt_eq,                &gte,               LM1, LB1)
+
+// Thumbs
+// COMB(num,               NUMWORD,        LHO, RH0)
+
+// special
+ZK_COMB0(https_combo,          &https,             LH0, RB0)
+
+
+// Numbers with cross side thumb
+ZMK_COMBO(comb_6,            N6,           RH0, LM4)
+ZMK_COMBO(comb_4,            N4,           RH0, LM3)
+ZMK_COMBO(comb_0,            N0,           RH0, LM2)
+ZMK_COMBO(comb_2,            N2,           RH0, LM1)
+ZMK_COMBO(comb_8,            N8,           RH0, LB1)
+ZMK_COMBO(comb_3,            N3,           LH0, RM1)
+ZMK_COMBO(comb_1,            N1,           LH0, RM2)
+ZMK_COMBO(comb_5,            N5,           LH0, RM3)
+ZMK_COMBO(comb_7,            N7,           LH0, RM4)
+ZMK_COMBO(comb_9,            N9,           LH0, RB1)
+
+// Symbols with same side thumb
+// Upper
+ZMK_COMBO(comb_tild,         TILDE,          LH0, LT4)
+ZMK_COMBO(comb_plus,         PLUS,           LH0, LT3)
+ZMK_COMBO(comb_astr,         ASTRK,          LH0, LT2)
+ZMK_COMBO(comb_exlm,         EXLC,           LH0, LT1)
+ZMK_COMBO(comb_hash,         HASH,           RH0, RT1)
+ZMK_COMBO(comb_at,           AT,             RH0, RT2)
+ZMK_COMBO(comb_caret,        CARET,          RH0, RT3)
+// Home-row
+ZMK_COMBO(comb_pipe,         PIPE,           LH0, LM4)
+ZMK_COMBO(comb_lcbr,         LBRC,           LH0, LM3)
+ZMK_COMBO(comb_rcbr,         RBRC,           LH0, LM2)
+ZMK_COMBO(comb_mins,         MINUS,          LH0, LM1)
+ZMK_COMBO(comb_bsls,         BSLH,           LH0, LM0)
+ZMK_COMBO(comb_grv,          GRAVE,          RH0, RM0)
+ZMK_COMBO(comb_ques,         QMARK,          RH0, RM1)
+ZMK_COMBO(comb_lbrc,         LBKT,           RH0, RM2)
+ZMK_COMBO(comb_rbrc,         RBKT,           RH0, RM3)
+// Lower
+ZMK_COMBO(comb_labk,         LT,             LH0, LB1)
+ZMK_COMBO(comb_rabk,         GT,             LH0, LB2)
+ZMK_COMBO(comb_perc,         PRCNT,          LH0, LB3)
+ZMK_COMBO(comb_ampr,         AMPS,           RH0, RB1)
+ZMK_COMBO(comb_lprn,         LPAR,           RH0, RB2)
+ZMK_COMBO(comb_rprn,         RPAR,           RH0, RB3)
+ZMK_COMBO(comb_unds,         UNDER,          RH0, RB4)
