@@ -1,5 +1,30 @@
+#define DBL_MACRO(key) ZMK_MACRO(dbl_##key, bindings = <&kp key &kp key>;)
+#define TRI_MACRO(key) ZMK_MACRO(tri_##key, bindings = <&kp key &kp key &kp key>;)
+#define DBL_S_MACRO(key) ZMK_MACRO(dbls_##key, bindings = <&kp SPACE &kp key &kp key &kp SPACE>;)
+#define BRACKET_S_MACRO(key) ZMK_MACRO(brk_##key, bindings = <&kp L##key &kp R##key &kp LEFT>;)
+
 / {
     macros {
+        // doubles
+        DBL_MACRO(UNDER)
+        DBL_MACRO(LT)
+        DBL_MACRO(GT)
+        DBL_MACRO(FSLH)
+        DBL_MACRO(BSLH)
+        // triples
+        TRI_MACRO(SQT)
+        TRI_MACRO(DQT)
+        TRI_MACRO(DOT)
+        TRI_MACRO(EQUAL)
+        TRI_MACRO(GRAVE)
+        // dbl with space
+        DBL_S_MACRO(PIPE)
+        DBL_S_MACRO(AMPS)
+        DBL_S_MACRO(EQUAL)
+        // brackets with left
+        BRACKET_S_MACRO(PAR)
+        BRACKET_S_MACRO(BKT)
+        BRACKET_S_MACRO(BRC)
         // <-
         ZMK_MACRO(arrow_left,        bindings = <&kp LT &kp MINUS>;)
         // ->
@@ -10,32 +35,12 @@
         ZMK_MACRO(arrow_right_d,     bindings = <&kp EQUAL &kp GT>;)
         // >=
         ZMK_MACRO(gte,               bindings = <&kp GT &kp EQUAL>;)
-        // _||_
-        ZMK_MACRO(log_or,            bindings = <&kp SPACE &kp PIPE &kp PIPE &kp SPACE>;)
-        // _&&_
-        ZMK_MACRO(log_and,           bindings = <&kp SPACE &kp AMPS &kp AMPS &kp SPACE>;)
-        // _==_
-        ZMK_MACRO(equals,            bindings = <&kp SPACE &kp EQUAL &kp EQUAL &kp SPACE>;)
         // _!=_
         ZMK_MACRO(equals_not,        bindings = <&kp SPACE &kp EXCL &kp EQUAL &kp SPACE>;)
-        // """
-        ZMK_MACRO(dquote_t,          bindings = <&kp DQT &kp DQT &kp DQT>;)
-        // '''
-        ZMK_MACRO(squote_t,          bindings = <&kp SQT &kp SQT &kp SQT>;)
-        // ...
-        ZMK_MACRO(dot_t,             bindings = <&kp DOT &kp DOT &kp DOT>;)
-        // ```
-        ZMK_MACRO(grave_t,           bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;)
         // {:?}
         ZMK_MACRO(print,             bindings = <&kp LBRC &kp COLON &kp QMARK &kp RBRC>;)
         // {:#?}
         ZMK_MACRO(pprint,            bindings = <&kp LBRC &kp COLON &kp HASH &kp QMARK &kp RBRC>;)
-        // (.)
-        ZMK_MACRO(pars,              bindings = <&kp LPAR &kp SPACE &kp RPAR &kp LEFT>;)
-        // [.]
-        ZMK_MACRO(brakets,           bindings = <&kp LBKT &kp SPACE &kp RBKT &kp LEFT>;)
-        // {.}
-        ZMK_MACRO(braces,            bindings = <&kp LBRC &kp SPACE &kp RBRC &kp LEFT>;)
         // https://
         ZMK_MACRO(https,             bindings = <&kp H &kp T &kp T &kp P&kp S &kp COLON &kp FSLH &kp FSLH>;)
     };
