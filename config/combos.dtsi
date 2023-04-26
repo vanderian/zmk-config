@@ -114,6 +114,7 @@
     // special
     combo_https {                  timeout-ms = <50>; layers = <0>; bindings = <&https>;                  key-positions = <LH0 RB0>; };
     combo_caps {                   timeout-ms = <50>; layers = <0>; bindings = <&caps_word>;              key-positions = <LM2 RM2>; };
+    combo_numbers {                timeout-ms = <50>; layers = <0>; bindings = <&to NUM>;                 key-positions = <LH0 RH0>; };
 
     // Numbers with cross side thumb
     combo_6 {                      timeout-ms = <50>; layers = <0>; bindings = <&kp N6>;                  key-positions = <RH0 LM4>; };
