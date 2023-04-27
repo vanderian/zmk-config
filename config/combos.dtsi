@@ -148,8 +148,8 @@
     combo_lbrc {                   timeout-ms = <50>; layers = <0>; bindings = <BRK(L, BKT)>;             key-positions = <RH0 RM2>; };
     combo_rbrc {                   timeout-ms = <50>; layers = <0>; bindings = <BRK(R, BKT)>;             key-positions = <RH0 RM3>; };
     // Lower
-    combo_labk {                   timeout-ms = <50>; layers = <0>; bindings = <DBL(LT)>;                 key-positions = <LH0 LB1>; };
-    combo_rabk {                   timeout-ms = <50>; layers = <0>; bindings = <DBL(GT)>;                 key-positions = <LH0 LB2>; };
+    combo_rabk {                   timeout-ms = <50>; layers = <0>; bindings = <DBL(GT)>;                 key-positions = <LH0 LB1>; };
+    combo_labk {                   timeout-ms = <50>; layers = <0>; bindings = <DBL(LT)>;                 key-positions = <LH0 LB2>; };
     combo_perc {                   timeout-ms = <50>; layers = <0>; bindings = <&kp PRCNT>;               key-positions = <LH0 LB3>; };
     combo_ampr {                   timeout-ms = <50>; layers = <0>; bindings = <DBLS(AMPS)>;              key-positions = <RH0 RB1>; };
     combo_lprn {                   timeout-ms = <50>; layers = <0>; bindings = <BRK(L, PAR)>;             key-positions = <RH0 RB2>; };
