@@ -81,28 +81,28 @@
     combo_backsp {                                         timeout-ms = <SLOW>; layers = <0>; bindings = <&kp BSPC>;           key-positions = <RT2 RT3>; };
 
     // Left home row
-    combo_escape_sym {        global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp ESC>;            key-positions = <LM2 LM1>; };
-    combo_ctrl_l {            global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LCTRL>;          key-positions = <LM3 LM2>; };
+    combo_escape_sym {      require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp ESC>;            key-positions = <LM2 LM1>; };
+    combo_ctrl_l {          require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LCTRL>;          key-positions = <LM3 LM2>; };
     combo_dquo {                                           timeout-ms = <SLOW>; layers = <0>; bindings = <TRI(DQT)>;           key-positions = <LM3 LM1>; };
-    combo_tab_mod {           global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp TAB>;            key-positions = <LM3 LM2 LM1>; };
+    combo_tab_mod {         require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp TAB>;            key-positions = <LM3 LM2 LM1>; };
     combo_del {                                            timeout-ms = <SLOW>; layers = <0>; bindings = <&kp DEL>;            key-positions = <LM1 LM0>; };
 
     // Right home row
     combo_coln_sym {                                       timeout-ms = <SLOW>; layers = <0>; bindings = <&kp COLON>;          key-positions = <RM1 RM2>; };
-    combo_ctrl_r {            global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RCTRL>;          key-positions = <RM2 RM3>; };
+    combo_ctrl_r {          require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RCTRL>;          key-positions = <RM2 RM3>; };
     combo_quot {                                           timeout-ms = <SLOW>; layers = <0>; bindings = <TRI(SQT)>;           key-positions = <RM1 RM3>; };
-    combo_ent {               global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp ENTER>;          key-positions = <RM1 RM2 RM3>; };
+    combo_ent {             require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>; layers = <0>; bindings = <&kp ENTER>;          key-positions = <RM1 RM2 RM3>; };
     combo_scln {                                           timeout-ms = <SLOW>; layers = <0>; bindings = <&kp SEMI>;           key-positions = <RM0 RM1>; };
 
     // Left bottom row
-    combo_lalt {              global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LALT>;           key-positions = <LB3 LB2>; };
-    combo_gui_l {             global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LGUI>;           key-positions = <LB2 LB1>; };
-    combo_shift_l {           global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&kp LSFT>;           key-positions = <LB1 LB0>; };
+    combo_lalt {            require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LALT>;           key-positions = <LB3 LB2>; };
+    combo_gui_l {           require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk LGUI>;           key-positions = <LB2 LB1>; };
+    combo_shift_l {         require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&kp LSFT>;           key-positions = <LB1 LB0>; };
 
     // Right bottom row
-    combo_shift_r {           global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&kp RSFT>;           key-positions = <RB0 RB1>; };
-    combo_gui_r {             global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RGUI>;           key-positions = <RB1 RB2>; };
-    combo_ralt {              global-quick-tap-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RALT>;           key-positions = <RB2 RB3>; };
+    combo_shift_r {         require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&kp RSFT>;           key-positions = <RB0 RB1>; };
+    combo_gui_r {           require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RGUI>;           key-positions = <RB1 RB2>; };
+    combo_ralt {            require-prior-idle-ms = <GQT>; timeout-ms = <SLOW>;               bindings = <&sk RALT>;           key-positions = <RB2 RB3>; };
 
     // Vertical top left
     combo_small_left_arrow {                               timeout-ms = <SLOW>; layers = <0>; bindings = <&arrow_left>;        key-positions = <LT2 LM2>; };
