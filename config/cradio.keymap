@@ -39,10 +39,10 @@
 #define LSCG(key)   &kp LS(LC(LG(key)))
 #define NAV_SPC     &mt &mo NAV 
 
-&num_word {
-    layers = <NUM>;
-    continue-list = <BSPC DOT COMMA PLUS MINUS STAR FSLH EQUAL X>;
-};
+// &num_word {
+//     layers = <NUM>;
+//     continue-list = <BSPC DOT COMMA PLUS MINUS STAR FSLH EQUAL X>;
+// };
 
 // Autoshift
 #define AS(keycode) &as LS(keycode) keycode
