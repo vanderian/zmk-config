@@ -60,8 +60,8 @@
     };
 };
 
-#include "macros.dtsi"
-#include "combos.dtsi"
+// #include "macros.dtsi"
+// #include "combos.dtsi"
 
 / {
     keymap {
